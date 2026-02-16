@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="anime1" size="1.000000 1.777174" />
+    <ImageTarget name="blackpink" size="1.000000 1.455163" />
+    <ImageTarget name="anime" size="1.000000 0.562500" />
+    <ImageTarget name="valorant" size="1.000000 1.332880" />
+    <ImageTarget name="whatsappimage2025-05-08at00" size="1.000000 2.222222" />
+  </Tracking>
+</QCARConfig>
