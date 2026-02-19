@@ -6,7 +6,9 @@ public class BombGameManager : MonoBehaviour
     public float timeLeft = 20f;
     public Text timerText;
     public GameObject resultPanel;
-    //public ParticleSystem explosionEffect;
+    public Text resultText;
+
+    public GameObject explosionObject;
 
     public string correctWire = "Wire_Blue";
 
@@ -50,14 +52,25 @@ public class BombGameManager : MonoBehaviour
     {
         gameActive = false;
         resultPanel.SetActive(true);
-        timerText.text = "Defused!";
+resultText.text = "Defused!";
+
     }
 
     void Explode()
     {
         gameActive = false;
-        //explosionEffect.Play();
-        resultPanel.SetActive(true);
         timerText.text = "BOOM!";
+        resultPanel.SetActive(true);
+
+        if (explosionObject != null)
+        {
+            ParticleSystem[] particles = explosionObject.GetComponentsInChildren<ParticleSystem>();
+
+            foreach (ParticleSystem ps in particles)
+            {
+                ps.Play();
+            }
+        }
     }
+
 }
