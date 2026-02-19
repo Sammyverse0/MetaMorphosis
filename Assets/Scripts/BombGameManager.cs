@@ -59,8 +59,9 @@ resultText.text = "Defused!";
     void Explode()
     {
         gameActive = false;
-        timerText.text = "BOOM!";
+        
         resultPanel.SetActive(true);
+        resultText.text = "BOOM!";
 
         if (explosionObject != null)
         {
