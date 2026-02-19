@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class BombGameManager : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class BombGameManager : MonoBehaviour
     public Text timerText;
     public GameObject resultPanel;
     public Text resultText;
+    public TMP_Text hintText;
 
     public GameObject explosionObject;
 
@@ -28,7 +30,10 @@ public class BombGameManager : MonoBehaviour
     }
 
     public void StartGame()
-    {
+    {   if(hintText != null)
+        {
+            hintText.gameObject.SetActive(true);
+        }
         timeLeft = 20f;
         gameActive = true;
         resultPanel.SetActive(false);
@@ -53,15 +58,17 @@ public class BombGameManager : MonoBehaviour
         gameActive = false;
         resultPanel.SetActive(true);
 resultText.text = "Defused!";
+        hintText.gameObject.SetActive(false);
 
     }
 
     void Explode()
     {
         gameActive = false;
-        
+        hintText.gameObject.SetActive(false);
         resultPanel.SetActive(true);
         resultText.text = "BOOM!";
+        
 
         if (explosionObject != null)
         {
