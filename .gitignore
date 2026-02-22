@@ -1,0 +1,96 @@
+# ==============================
+# Unity Generated Folders
+# ==============================
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+
+# ==============================
+# Vuforia Generated / Cache Files
+# ==============================
+.vuforia/
+.vuforiaengine/
+VuforiaEngine/Cache/
+VuforiaEngine/Logs/
+VuforiaEngine/Temp/
+
+# ==============================
+# Visual Studio / Rider
+# ==============================
+.vs/
+.idea/
+*.csproj
+*.sln
+*.user
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+
+# ==============================
+# Unity Cache / Crash Files
+# ==============================
+sysinfo.txt
+crashlytics-build.properties
+
+# ==============================
+# OS Generated Files
+# ==============================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==============================
+# Log Files
+# ==============================
+*.log
+
+# ==============================
+# Build Outputs
+# ==============================
+*.apk
+*.aab
+*.app
+*.exe
+*.unitypackage
+*.xcodeproj
+*.gradle
+*.keystore
+
+# ==============================
+# Compressed Files
+# ==============================
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+
+# ==============================
+# Unity Addressables Cache
+# ==============================
+AddressableAssetsData/*/AssetBundles/
+
+# ==============================
+# JetBrains Rider / VS Code
+# ==============================
+.vscode/
+.history/
+
+# ==============================
+# Backup / Temp Files
+# ==============================
+*.bak
+*.tmp
+*.swp
+
+# ==============================
+# Ignore Auto-generated Meta Conflicts
+# ==============================
+*.orig
