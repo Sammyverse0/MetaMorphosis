@@ -12,23 +12,26 @@ public class GameManager : MonoBehaviour
 
     void SpawnTargets()
     {
+        Camera cam = Camera.main;
+
         for (int i = 0; i < numberOfTargets; i++)
         {
-            Vector3 randomPos = Camera.main.transform.position +
-                                Camera.main.transform.forward * Random.Range(1.5f, 2.5f) +
-                                new Vector3(Random.Range(-0.5f, 0.5f),
-                                            Random.Range(-0.5f, 0.5f),
-                                            0);
+            float randomX = Random.Range(0.3f, 0.7f);
+            float randomY = Random.Range(0.3f, 0.7f);
+            float distance = 2f;
 
-            // Face camera
+            Vector3 viewportPos = new Vector3(randomX, randomY, distance);
+            Vector3 worldPos = cam.ViewportToWorldPoint(viewportPos);
+
             Quaternion rotation = Quaternion.LookRotation(
-                randomPos - Camera.main.transform.position
+                worldPos - cam.transform.position
             );
 
-            // Apply -90° Y correction
             rotation *= Quaternion.Euler(0f, -90f, 0f);
 
-            Instantiate(targetPrefab, randomPos, rotation);
+            GameObject target = Instantiate(targetPrefab, worldPos, rotation);
+
+            target.transform.SetParent(null); // make sure it's not parented accidentally
         }
     }
 }
