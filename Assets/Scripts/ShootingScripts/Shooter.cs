@@ -5,6 +5,7 @@ public class Shooter : MonoBehaviour
 {
     private ARControls controls;
     private bool canShoot = false;
+    public GameManager gameManager;
 
     void Awake()
     {
@@ -44,6 +45,7 @@ public class Shooter : MonoBehaviour
         {
             if (hit.transform.CompareTag("Target"))
             {
+                gameManager.TargetDestroyed();
                 Destroy(hit.transform.gameObject);
             }
         }

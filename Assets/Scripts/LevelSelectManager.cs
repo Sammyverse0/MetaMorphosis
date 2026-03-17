@@ -15,13 +15,4 @@ public class LevelSelectManager : MonoBehaviour
         level2Button.interactable = unlockedLevel >= 2;
     }
 
-    public void LoadLevel1()
-    {
-        SceneManager.LoadScene("BombPuzzleLevel");
-    }
-
-    public void LoadLevel2()
-    {
-        SceneManager.LoadScene("ARGunLevel");
-    }
 }
