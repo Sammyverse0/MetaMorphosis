@@ -41,9 +41,9 @@ MonoBehaviour:
     unlitShader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
     videoBackgroundEnabled: 1
   deviceTracker:
-    autoStartTracker: 0
-    arcoreRequirement: 0
-    autoImportArcore: 0
+    autoStartTracker: 1
+    arcoreRequirement: 1
+    autoImportArcore: 1
     thirdPartyARCoreClientDetected: 0
   playmode:
     mRecordingPath: 

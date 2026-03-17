@@ -4,9 +4,10 @@ using UnityEngine.SceneManagement;
 
 public class SceneManagement : MonoBehaviour
 {
-    public void scan()
+
+    public void Levels(string s)
     {
-        SceneManager.LoadScene("ARScene");
+        SceneManager.LoadScene(s);
     }
 
     public void Quit()

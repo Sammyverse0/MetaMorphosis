@@ -5,33 +5,43 @@ public class GameManager : MonoBehaviour
     public GameObject targetPrefab;
     public int numberOfTargets = 3;
 
+    public Transform worldAnchor;
+    public GameObject crosshairUI;
+    public Shooter shooter;
+
     public void StartGame()
     {
+        // Lock anchor to camera position when game starts
+        worldAnchor.position = Camera.main.transform.position +
+                               Camera.main.transform.forward * 1.5f;
+
+        worldAnchor.rotation = Quaternion.identity;
+
         SpawnTargets();
+
+        crosshairUI.SetActive(true);
+        shooter.EnableShooting();
     }
 
     void SpawnTargets()
     {
-        Camera cam = Camera.main;
-
         for (int i = 0; i < numberOfTargets; i++)
         {
-            float randomX = Random.Range(0.3f, 0.7f);
-            float randomY = Random.Range(0.3f, 0.7f);
-            float distance = 2f;
+            Vector3 offset = new Vector3(
+                Random.Range(-0.6f, 0.6f),
+                Random.Range(-0.3f, 0.3f),
+                Random.Range(0.8f, 1.2f)
+            );
 
-            Vector3 viewportPos = new Vector3(randomX, randomY, distance);
-            Vector3 worldPos = cam.ViewportToWorldPoint(viewportPos);
+            Vector3 spawnPos = worldAnchor.position + offset;
 
             Quaternion rotation = Quaternion.LookRotation(
-                worldPos - cam.transform.position
+                spawnPos - Camera.main.transform.position
             );
 
             rotation *= Quaternion.Euler(0f, -90f, 0f);
 
-            GameObject target = Instantiate(targetPrefab, worldPos, rotation);
-
-            target.transform.SetParent(null); // make sure it's not parented accidentally
+            Instantiate(targetPrefab, spawnPos, rotation, worldAnchor);
         }
     }
 }

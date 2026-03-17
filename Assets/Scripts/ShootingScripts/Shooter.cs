@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class Shooter : MonoBehaviour
 {
     private ARControls controls;
+    private bool canShoot = false;
 
     void Awake()
     {
@@ -22,14 +23,24 @@ public class Shooter : MonoBehaviour
         controls.Gameplay.Disable();
     }
 
+    public void EnableShooting()
+    {
+        canShoot = true;
+    }
+
     void Shoot(InputAction.CallbackContext context)
     {
-        Vector2 touchPos = Touchscreen.current.primaryTouch.position.ReadValue();
+        if (!canShoot) return;
 
-        Ray ray = Camera.main.ScreenPointToRay(touchPos);
+        // Shoot straight from camera center
+        Ray ray = new Ray(
+            Camera.main.transform.position,
+            Camera.main.transform.forward
+        );
+
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit))
+        if (Physics.Raycast(ray, out hit, 100f))
         {
             if (hit.transform.CompareTag("Target"))
             {

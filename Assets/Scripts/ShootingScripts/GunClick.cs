@@ -6,6 +6,8 @@ public class GunClick : MonoBehaviour
     private ARControls controls;
     public GameManager gameManager;
 
+    public Transform worldAnchor;
+
     void Awake()
     {
         controls = new ARControls();
@@ -25,6 +27,8 @@ public class GunClick : MonoBehaviour
 
     private void OnTap(InputAction.CallbackContext context)
     {
+        worldAnchor.position = transform.position;
+        worldAnchor.rotation = Quaternion.identity;
         Vector2 touchPos = Touchscreen.current.primaryTouch.position.ReadValue();
 
         Ray ray = Camera.main.ScreenPointToRay(touchPos);
@@ -35,6 +39,9 @@ public class GunClick : MonoBehaviour
             if (hit.transform == transform)
             {
                 gameManager.StartGame();
+
+                // hide gun
+                gameObject.SetActive(false);
             }
         }
     }

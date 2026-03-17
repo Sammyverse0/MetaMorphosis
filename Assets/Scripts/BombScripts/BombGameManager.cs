@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class BombGameManager : MonoBehaviour
 {
@@ -59,6 +60,7 @@ public class BombGameManager : MonoBehaviour
         resultPanel.SetActive(true);
 resultText.text = "Defused!";
         hintText.gameObject.SetActive(false);
+        CompleteLevel();
 
     }
 
@@ -79,6 +81,18 @@ resultText.text = "Defused!";
                 ps.Play();
             }
         }
+    }
+
+    public void CompleteLevel()
+    {
+        int unlocked = PlayerPrefs.GetInt("LevelUnlocked", 1);
+
+        if (unlocked < 2)
+        {
+            PlayerPrefs.SetInt("LevelUnlocked", 2);
+        }
+
+        SceneManager.LoadScene("LevelScene");
     }
 
 }
