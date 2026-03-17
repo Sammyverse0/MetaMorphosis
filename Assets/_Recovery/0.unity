@@ -2508,23 +2508,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: b575c634788bb6e4aa51da2630446262, type: 3}
       propertyPath: m_LocalScale.x
-      value: 30
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b575c634788bb6e4aa51da2630446262, type: 3}
       propertyPath: m_LocalScale.y
-      value: 30
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b575c634788bb6e4aa51da2630446262, type: 3}
       propertyPath: m_LocalScale.z
-      value: 30
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b575c634788bb6e4aa51da2630446262, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.054
+      value: 0.07
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b575c634788bb6e4aa51da2630446262, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.667
+      value: 0.58
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b575c634788bb6e4aa51da2630446262, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2882,7 +2882,6 @@ GameObject:
   - component: {fileID: 1966921385}
   - component: {fileID: 1966921384}
   - component: {fileID: 1966921387}
-  - component: {fileID: 1966921388}
   m_Layer: 0
   m_Name: ImageTarget
   m_TagString: Untagged
@@ -2960,7 +2959,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1966921388}
+  mPreview: {fileID: 0}
 --- !u!4 &1966921386
 Transform:
   m_ObjectHideFlags: 0
@@ -2991,25 +2990,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   lockCanvas: {fileID: 440087468}
   lockRoot: {fileID: 811191510}
---- !u!114 &1966921388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1966921382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 1966921385}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: centreofmeta
-  mDatasetName: Vuforia/Meta.xml
-  mCastedBehaviour: {fileID: 1966921385}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!1 &2029154819
 GameObject:
   m_ObjectHideFlags: 0
