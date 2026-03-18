@@ -13,8 +13,13 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.VuforiaConfiguration
   vuforia:
+<<<<<<< HEAD
     vuforiaLicenseKey: Ad1Yscj/////AAABmVEGo3wqHkXksOEiXO58qGlPNckHurFUlq6brFGQeXF17FIDLRo+6axEcti9hxD4gwX7Q2AaD+Hac/Qkgdd7frW3bl9CKQ3jaxSHVpuJEMiokKWt/ESdNKaUyAXDK7bPcL8UuRqMn9W9FleTewyyUJVVCqqbIV4fqUGAY0o6kQNs6BlzfX6QGgd8rU/2RLSsBoVn4MFbiAsCKPNiV/CWXYQVfRbbKbw/t1LadC8pHhfzsKCtZFNwfRQLzaBs5jKaESd6jPAlfdtwgAZOAUKBHPIH7FqZcsM1mjOvt8m9R/YdVUPv7W534C+gVqHED4NwpW2jbahnSCdE4nOC8CzPF89mOXQ2NL9TOiq1qRQ5p5/T
     ufoLicenseKey: QVRRZkVPbi8vLy8vQUFBQUtJblpuY0EzK1VIK3QxVTFtNGMzbGVhTThaVHM1VVk4N0Naay9ReTZycktCQjNQdmpJMzlyeXFkTUtBdHRQbW5sand4bllwZE5oOHJSbjM5QXY5RVRZT01PN2s2dkcxblo5ekorYlo0dlQ3KzBzZXF5a2tWaG1vdGZjQ1BuSjMycE51S2J5T2RDTWVUVllBQUNRK2c0SjBQRlQ1VHlFZGVFSGF0Q2NRNEdHQmhjbm05bUNMRTF2UmNYUmozekozUW90RDh5cDFwVDduWlN3a2tNSjJiK2hWY3dCbTM4ZDUvWWRUK1BnM2hYWklSdGFSYnpKa21PNXU1SEV0QkY5Rnl1R1k1Sk1DSW8reDNjU053QUN5WHI0MDgvOS9xRU95WFl0VGRNRDhWdzlnU0hOT2RNdWgyZG9VSW9kT1lta2doZ0V4dENaVUU4ZytFYVhOYUtIZXg1RDErdHJSTlIxSTFKRWh5M0dMTkVEK08=
+=======
+    vuforiaLicenseKey: ATWo3Of/////AAABmTGb3UmcrkryqJ3+F6faxXiJqE+kU4EsUV6tTU8sKpv9p+Fr1qrOO1/hsijai1MPTjRfPBZX+4BE4amh9axCA53fmX9bWbetUSJmCQljOHOOXrOI8+XGNIqvGll9Q0tfo4JRy4Za0KkTHvkdGhsENmvfm7g7zL/wyIDGykkVypGYHd/7C2wYlHjfTg1zLwDmDyioD+m/HbrSdIhNgDovMzkr/hF4oiMPXY3fMWVln2lqND7JEu2z3jN5dqmPjIVteMXckQsItaWp0MmMjqK8eDxIk678W7AcRbvYg7sTGViTwQs3/KqehiPuMy8kmRy50JYpFUCziHuWjAc8VYrfOaGLMygojKLCqRAo+eAxtvwF
+    ufoLicenseKey: QWVaaG1DTC8vLy8vQUFBQUtGOUd2d0gzUGs0VWpiQzNLVzJDNzQ4blE5bThFbWFHY2tkSTlKako1Sm1pc2tGYzRnWDdYY2VHak5tVFdSbFk0cWk3ai9aSktnNDhHTTdnSksyVENoTDdLZlRqZ2NNeThZUG9WS0J1OHlvMFlSQ0l1UllMeVppYnowZHJFZWZlL09KZnFRT2RIZzdYbnQ1ZnBleExUU2kxL1BTVTJnM1IwWmtJS1FiZVVpSjkxTVlGeTIwQWJsMGpkbWp3ajJ3WmR0NVhHNVBDZzJ5b3ZwMCtacmk2RVp6eUh4T2g2aEVQZTFUSnF3emtXdGh1NG12dnh5d1ZKSGREaStWQWpsR3kvbS95M2E2OFE2aTRWbXA0a282SHpCbno3RHlGTXpQQStQQ0R0QTEzTWh2V2l0Qk5mWUVlTW5Hbzl1a0pFMXlNdkFQdHpuRHM5UXRKT3Y2K0ZNMVMzL2Z3cU5MRGZuZ0NVcGVsV0xQOU5KajQ=
+>>>>>>> origin/palak
     delayedInitialization: 0
     cameraFocusModeSetting: 2
     cameraDeviceModeSetting: -1
@@ -24,7 +29,11 @@ MonoBehaviour:
     shareRecordingsInITunes: 0
     logLevel: 0
     version: 11.4.4
+<<<<<<< HEAD
     eulaAcceptedVersions: '{"Values":["11.1","8.5","11.3","11.4"]}'
+=======
+    eulaAcceptedVersions: '{"Values":["0.0","11.2","11.3","8.5","11.4","11.1"]}'
+>>>>>>> origin/palak
   database:
     disableModelExtraction: 0
   plugins:

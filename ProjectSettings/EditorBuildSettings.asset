@@ -5,6 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+<<<<<<< HEAD
   - enabled: 1
 <<<<<<< HEAD
     path: Assets/Scenes/SampleScene.unity
@@ -22,6 +23,20 @@ EditorBuildSettings:
     path: Assets/Scenes/Shooting.unity
     guid: 4e85b886bdf3c3741aa279456060e5bc
 >>>>>>> origin/Samriddhi
+=======
+  - enabled: 0
+    path: Assets/Scenes/MainMenu.unity
+    guid: 39231e7423e23854eb6b3513ca1dfae2
+  - enabled: 0
+    path: Assets/Scenes/ARScene.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 0
+    path: Assets/Scenes/palakar.unity
+    guid: 16f50c8b9e219114d825f111c36c2cd3
+  - enabled: 1
+    path: Assets/Scenes/palakflappy.unity
+    guid: c3304adb32f3f5844b5aa947a3d205fd
+>>>>>>> origin/palak
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -4,7 +4,12 @@
 TagManager:
   serializedVersion: 3
   tags:
+<<<<<<< HEAD
   - Target
+=======
+  - pipe
+  - Pipe
+>>>>>>> origin/palak
   layers:
   - Default
   - TransparentFX
