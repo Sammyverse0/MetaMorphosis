@@ -1,0 +1,46 @@
+{
+    "version": 1,
+    "name": "ARControls",
+    "maps": [
+        {
+            "name": "Gameplay",
+            "id": "edbe8a4e-76a6-4709-87f4-20d1323a2e01",
+            "actions": [
+                {
+                    "name": "Tap",
+                    "type": "Button",
+                    "id": "b5878bde-1089-4498-bc92-8d255ebda8a2",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "bd956353-67b1-4bc8-9179-76121d481667",
+                    "path": "<Touchscreen>/Press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Tap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9caeb012-5d8f-4d83-a896-2930ace1f9bc",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Tap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
